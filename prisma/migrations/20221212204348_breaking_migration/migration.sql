@@ -5,5 +5,6 @@
 
 */
 -- AlterTable
+SET enable_implicit_transaction_for_batch_statements = false;
 ALTER TABLE "Account" DROP COLUMN "balance";
 ALTER TABLE "Account" ADD COLUMN     "balance" INT8 NOT NULL;
